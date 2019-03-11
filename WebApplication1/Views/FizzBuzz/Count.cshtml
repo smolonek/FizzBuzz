@@ -1,0 +1,27 @@
+﻿@model WebApplication1.Models.Licz
+@{
+    ViewBag.Title = "Fizz or Buzz";
+}
+<!DOCTYPE html>
+<body>
+    <div>
+        @using (Html.BeginForm())
+        {
+            <div id="Containter">
+                <div id="Liczba">
+                    @Html.DisplayNameFor(model => Model.liczba):
+                </div>
+                <div id="LiczbaOkienko">
+                    @Html.TextBoxFor(model => Model.liczba)
+                </div>
+                <div id="Przycisk">
+                    <br/>
+                    <input type="submit" value="Odpowiedz" />
+                </div>
+            </div>
+        }
+    </div>
+</body>
+
+
+

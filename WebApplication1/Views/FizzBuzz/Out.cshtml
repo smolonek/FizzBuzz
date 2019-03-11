@@ -1,0 +1,22 @@
+﻿@model WebApplication1.Models.Licz
+@{
+    ViewBag.Title = "Out";
+}
+
+<body>
+    
+    <div id="wynik">
+        <div id="Container">
+            <div id="Wynik">
+                <br/>
+                @Html.DisplayFor(model => Model.wynik)
+                <br/>
+            </div>
+        </div>
+        <footer>
+        <p></p><p></p>
+        <p><button onclick="window.location.href = '';">Strona główna</button></p>
+        </footer>
+    </div>
+</body>
+
